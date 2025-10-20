@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dar">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,32 +14,14 @@
 			</div>
 		</header>
 		<main class="calculator">
-			<form action="">
+			<form action="" id="calculator-form">
 				<div class="calculator__container">
-					<input type="text" class="calculator__input" />
+					<input type="text" id="calculator-input" class="calculator__input" /readonly>
 
-					<div class="calculator__board">
-						<button class="calculator__button calculator__button--pri">7</button>
-						<button class="calculator__button calculator__button--pri">8</button>
-						<button class="calculator__button calculator__button--pri">9</button>
-						<button class="calculator__button calculator__button--func">DEL</button>
-						<button class="calculator__button calculator__button--pri">4</button>
-						<button class="calculator__button calculator__button--pri">5</button>
-						<button class="calculator__button calculator__button--pri">6</button>
-						<button class="calculator__button calculator__button--pri">+</button>
-						<button class="calculator__button calculator__button--pri">1</button>
-						<button class="calculator__button calculator__button--pri">2</button>
-						<button class="calculator__button calculator__button--pri">3</button>
-						<button class="calculator__button calculator__button--pri">-</button>
-						<button class="calculator__button calculator__button--pri">.</button>
-						<button class="calculator__button calculator__button--pri">0</button>
-						<button class="calculator__button calculator__button--pri">/</button>
-						<button class="calculator__button calculator__button--pri">x</button>
-						<button class="calculator__button calculator__button--func">RESET</button>
-						<button class="calculator__button calculator__button--acc">=</button>
-					</div>
+					<div class="calculator__board" id="calculator-board"></div>
 				</div>
 			</form>
 		</main>
+		<script src="./js/index.js" type="module"></script>
 	</body>
 </html>
