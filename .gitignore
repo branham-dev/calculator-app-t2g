@@ -1,0 +1,9 @@
+/images
+/node_modules
+/dist
+
+data.html
+style-guide.md
+
+src/css
+src/js

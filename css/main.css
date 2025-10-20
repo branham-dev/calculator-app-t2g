@@ -1,0 +1,116 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  width: 412px;
+  margin: 0 auto;
+}
+
+.header {
+  color: var(--color-text-primary);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 3rem auto;
+}
+
+.calculator__container {
+  width: 85%;
+  margin: 0 auto;
+}
+.calculator__input {
+  border: none;
+  width: 100%;
+  min-height: 5rem;
+  font-size: 2.5rem;
+  outline: none;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-bg-screen);
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+}
+.calculator__board {
+  background-color: var(--color-bg-secondary);
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 69px);
+  grid-auto-rows: auto;
+  row-gap: 1.25rem;
+  column-gap: 0.75rem;
+  justify-content: center;
+}
+.calculator__button {
+  display: block;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator__button {
+  background-color: var(--color-key-primary-bg);
+  box-shadow: 0px 5px 0px var(--color-key-primary-shadow);
+  color: var(--color-text-primary);
+}
+.calculator__button:hover {
+  background-color: #fff;
+}
+.calculator__button--func {
+  background-color: var(--color-key-func-bg);
+  box-shadow: 0px 5px 0px var(--color-key-func-shadow);
+  color: var(--color-text-screen);
+  font-size: 1.35rem;
+}
+.calculator__button--func:hover {
+  background-color: var(--color-key-func-bg);
+  opacity: 0.9;
+}
+.calculator__button--acc {
+  background-color: var(--color-key-accent-bg);
+  box-shadow: 0px 5px 0px var(--color-key-accent-shadow);
+  color: var(--color-text-screen);
+  font-size: 1.35rem;
+}
+.calculator__button--acc:hover {
+  background-color: var(--color-key-accent-bg);
+  opacity: 0.9;
+}
+.calculator__button:nth-last-child(2), .calculator__button:last-child {
+  grid-column: span 2;
+}
+
+:root {
+  --color-bg-primary: hsl(0, 0%, 90%);
+  --color-bg-secondary: hsl(0, 5%, 81%);
+  --color-bg-screen: hsl(0, 0%, 93%);
+  --color-key-func-bg: hsl(185, 42%, 37%);
+  --color-key-func-shadow: hsl(185, 58%, 25%);
+  --color-key-accent-bg: hsl(25, 98%, 40%);
+  --color-key-accent-shadow: hsl(25, 99%, 27%);
+  --color-key-primary-bg: hsl(0, 0%, 90%);
+  --color-key-primary-shadow: hsl(35, 11%, 61%);
+  --color-text-primary: hsl(60, 10%, 19%);
+  --color-text-screen: hsl(0, 100%, 100%);
+}
+
+/*# sourceMappingURL=main.css.map */
