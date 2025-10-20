@@ -1,0 +1,26 @@
+{
+	"name": "calculator-app-t2g",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:sass": "sass --watch src/sass:src/css --load-path=src/sass",
+		"watch:ts": "tsc --watch --outDir src/js",
+		"dev": "concurrently \"pnpm run watch:sass\" \"pnpm run watch:ts\"",
+		"build:sass": "sass --load-path=src/sass src/sass:dist/css",
+		"build:html": "cp src/index.html dist/index.html",
+		"build:ts": "tsc",
+		"build": "pnpm run build:sass && pnpm run build:html && pnpm run build:ts",
+		"deploy": "gh-pages -d dist"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.17.1",
+	"devDependencies": {
+		"concurrently": "^9.2.1",
+		"gh-pages": "^6.3.0",
+		"sass": "^1.93.2",
+		"typescript": "^5.9.3"
+	}
+}
