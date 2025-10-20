@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+  "type": "module",
 	"scripts": {
 		"watch:sass": "sass --watch src/sass:src/css --load-path=src/sass",
 		"watch:ts": "tsc --watch --outDir src/js",
