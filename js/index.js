@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const calculatorForm = document.querySelector("#calculator-form");
     const calculatorBoard = document.querySelector("#calculator-board");
     const calculatorInput = document.querySelector("#calculator-input");
+    const switchContainer = document.querySelector("#switch-container");
     const BASE = "calculator__button";
     const MOD = (m) => `${BASE}${m}`;
     const primary = "--pri";
@@ -121,6 +122,27 @@ document.addEventListener("DOMContentLoaded", () => {
                 Calculator.reset();
                 break;
         }
+    });
+    switchContainer.addEventListener("click", (e) => {
+        const radio = e.target;
+        if (!(radio instanceof HTMLInputElement))
+            return;
+        if (radio.type !== "radio")
+            return;
+        switch (radio.id) {
+            case "theme-light":
+                document.documentElement.className = "theme-light";
+                break;
+            case "theme-dark":
+                document.documentElement.className = "theme-dark";
+                break;
+            case "theme-contrast":
+                document.documentElement.className = "theme-contrast";
+                break;
+            default:
+                break;
+        }
+        console.log(radio);
     });
     const populateKeyboard = () => {
         calculatorUI.forEach((button) => {

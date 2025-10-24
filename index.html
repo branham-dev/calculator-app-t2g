@@ -10,7 +10,23 @@
 		<header class="header">
 			<div class="header__container">
 				<h1 class="header__title">Calc</h1>
-				<div class="header__theme">Theme</div>
+				<div class="header__theme switch">
+					<p class="switch__text">Theme</p>
+					<div class="switch__container" id="switch-container">
+						<label for="theme-dark" class="switch__label">
+							<span>1</span>
+							<input type="radio" name="theme" id="theme-dark" />
+						</label>
+						<label for="theme-light" class="switch__label"
+							><span>2</span>
+							<input type="radio" name="theme" id="theme-light" class="switch__label" />
+						</label>
+						<label for="theme-contrast" class="switch__label"
+							><span>3</span>
+							<input type="radio" name="theme" id="theme-contrast" class="switch__label" />
+						</label>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main class="calculator">

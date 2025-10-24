@@ -99,6 +99,25 @@ body {
   grid-column: span 2;
 }
 
+.switch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+.switch__container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.switch__label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
 :root {
   --color-bg-primary: hsl(0, 0%, 90%);
   --color-bg-secondary: hsl(0, 5%, 81%);
